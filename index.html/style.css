@@ -1,0 +1,228 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(image/misile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    border: 3px solid rgb(211, 11, 11);
+    border-radius: 50px;
+}
+.menubar{
+    text-align: center;
+    margin-top: 0vh;
+    padding: 3vh;
+    background-image: url(image/thenews.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-style: groove;
+    border-color: black;
+    border-top-right-radius: 4vh;
+    border-bottom-left-radius: 4vh;
+}
+.menubar ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    
+    position: relative;
+}
+.menubar ul li{
+    width: 17vh;
+    margin: 5vh;
+    text-align: center;
+}
+.menubar ul li a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 3vh;
+}
+.menubar ul li a::after{
+content:"";
+position: absolute;
+background-color: red;
+height: 5px;
+width: 100%;
+left: 0;
+bottom: -5px;
+transition: 0.8s;
+transform: scaleX(0);
+transform-origin: right;
+}
+.menubar ul li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.content{
+    margin: 5px;
+    padding: 5px;
+    font-family: monospace;
+    text-decoration: solid;
+    font-size: x-large;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+}
+.content h4{
+    text-decoration: underline;
+}
+.imgcntnr li{
+    display: block;
+    text-decoration: none;
+}
+.imgcntnr img{
+    margin: 20px;
+    width: 40%;
+    height: 35vh;
+    border-radius: 20px;
+    border-color: black;
+    border-style: groove;
+}
+.poem{
+    margin-top: 10vh;
+    margin-left: 80vh;
+    width: 50vh;
+    height: 78vh;
+    background-color: grey;
+    border-radius: 40px;
+}
+.poem h3{
+    padding: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+.poem pre{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: solid;
+    font-style: oblique;
+}
+.frstgenerals{
+    display: flex;
+}
+.general{
+    margin: 15px;
+    padding: 10px;
+    width: 30%;
+    height: 70vh;
+    background-color: pink;
+    border-end-end-radius: 10vh;
+   border-start-start-radius: 10vh;
+   border-style: double;
+   
+}
+.general img{
+    margin-left: 14vh;
+    width: 40%;
+    height: 50%;
+    border-radius: 50%;
+    border-color: black;
+    border-style: groove;
+    object-position: center;
+}
+.general1{
+    margin: 15px;
+    padding: 10px;
+    width: 32%;
+    height: 70vh;
+    background-color: pink;
+    border-end-end-radius: 10vh;
+   border-start-start-radius: 10vh;
+   border-style: double;
+
+}
+.general1 img{
+    margin-left: 14vh;
+    width: 40%;
+    height: 50%;
+    border-radius: 50%;
+    border-color: black;
+    border-style: groove;
+
+}
+.general2{
+    margin: 15px;
+    padding: 10px;
+    width: 30%;
+    height: 70vh;
+    background-color: pink;
+    border-end-end-radius: 10vh;
+   border-start-start-radius: 10vh;
+   border-style: double;
+}
+.general2 img{
+    margin-left: 14vh;
+    width: 40%;
+    height: 50%;
+    border-color: black;
+    border-radius: 50%;
+    border-style: groove;
+}
+@media only screen and (max-width: 1140px) {
+    .menubar{
+        width: 70vh;
+    }
+    .menubar ul{
+        margin: 20px;
+        flex-direction: column;
+        width: 100%;
+        padding: 1vh;
+        text-align: center;}
+    .menubar ul li{
+        margin: 5px;padding: 5px;margin-left: 8vh;
+
+    }
+    .imgcntnr img{
+        margin: 20px;
+        width: 80%;
+        height: 10vh;
+    }
+    .general img{
+        margin-left: 25px;
+    }
+    .general1 img{
+        margin-left: 25px;
+    }
+    .general2 img{
+        margin-left: 25px;
+    }
+    .frstgenerals{
+        display: contents;
+    }
+    .general{
+        text-align: left;
+        height: 83vh;
+        width: 70vh;
+    }
+    .general1{
+        height: 83vh;
+        width: 70vh;
+    }
+    .general2{
+        height: 83vh;
+        width: 70vh;
+    }
+    .poem{
+        margin-left: 2vh;
+        width: 50vh;
+        height: 90vh;
+        background-color: whitesmoke;
+        border-radius: 40px;
+    }    
+}
+.menubar ul{
+text-align: center;
+}
+
